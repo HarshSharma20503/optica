@@ -1,30 +1,31 @@
-.card{
+.card {
     background: #1a1919;
     padding: 1.2rem 1rem;
 
 
-    img{
+    img {
         width: 100%;
-        }
+    }
 
-    .card_name{
+    .card_name {
         color: #fff;
         padding: 1rem 0;
+        text-align: center;
     }
 
-    .card_designation p{
+    .card_designation p {
         padding-bottom: 1rem;
         font-size: 1.1rem;
-        text-align: justify;
+        text-align: center;
     }
 
-    .social_links{
+    .social_links {
         display: flex;
         justify-content: center;
         padding: 0.5rem 0;
     }
 
-    .social_links .social_links_icon{
+    .social_links .social_links_icon {
         padding: 0.5rem 1rem;
     }
 

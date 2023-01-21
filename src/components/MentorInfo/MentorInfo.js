@@ -4,9 +4,9 @@ import "./MentorInfo.scss"
 function MentorInfo() {
     return (
         <div className="mentors">
-            <div className="card-container">
+            <div className="mentor-card-container">
                 
-                <div className="card">
+                <div className="mentor-card">
                     <div className="mentor_photo">
                         <img src="../images/anuraj_panwar.jpg" alt="img" width="200px" />
                     </div>
@@ -17,7 +17,7 @@ function MentorInfo() {
                     </p>
                 </div>
 
-                <div className="card">
+                <div className="mentor-card">
                     <div className="mentor_photo">
                         <img src="../images/manoj_tripathi.png" alt="img" width="200px" />
                     </div>
@@ -28,7 +28,7 @@ function MentorInfo() {
                     </p>
                 </div>
 
-                <div className="card">
+                <div className="mentor-card">
                     <div className="mentor_photo">
                         <img src="../images/ashish_bhatnagar.jpg" alt="img" width="200px" />
                     </div>
