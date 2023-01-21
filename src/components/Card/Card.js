@@ -6,7 +6,7 @@ import React from 'react'
 const Card = (props) => {
   return (
     <div className="card">
-      <img src={props.imgsrc} alt={props.name}/>
+      <img loading="lazy" src={props.imgsrc} alt={props.name}/>
       <h2 className="card_name">{props.name}</h2>
       <div className="card_designation">
         <p>{props.designation}</p>
