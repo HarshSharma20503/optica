@@ -47,9 +47,11 @@
 }
 }
 @media screen and (max-width:1080px) {
+    .mentors{
     .mentor-card-container {
         max-width: 90%;
         margin: auto;
         grid-template-columns: auto;
     }
+}
 }
