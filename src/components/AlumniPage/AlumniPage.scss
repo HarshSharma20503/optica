@@ -27,9 +27,14 @@
             grid-template-columns: auto;
             margin: 0 30px;
         }
-        .alumni_founders_heading{
-            max-width : 100%;
+
+        .alumni_founders_heading {
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
+
         .alumni_founders_cards {
             display: grid;
             grid-template-columns: auto;
@@ -49,8 +54,12 @@
             grid-template-columns: auto;
             margin: 0 30px;
         }
-        .alumni_founders_heading{
-            max-width : 100%;
+
+        .alumni_founders_heading {
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .alumni_founders_cards {

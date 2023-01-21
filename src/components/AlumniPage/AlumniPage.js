@@ -1,7 +1,8 @@
 import "./AlumniPage.scss";
 import React from 'react'
 import Card from "../Card/Card";
-import SideHeading from "../ASideHeading/SideHeading";
+import SideHeading from "../SideHeading/SideHeading";
+import YearButton from "../YearButton/YearButton";
 
 
 function AlumniPage() {
@@ -13,6 +14,10 @@ function AlumniPage() {
                         side_heading="Founding Members"
                         side_content="The future belongs to those who believe in the beauty of their dreams."
                     />
+                    <YearButton text="2021-22" />
+                    <YearButton text="2020-21" />
+                    <YearButton text="2019-20" />
+                    <YearButton text="2018-19" />
                 </div>
                 <div className="alumni_founders_cards">
                     <Card
