@@ -6,6 +6,7 @@ import Team from "./routes/Team/Team";
 import Mentor from "./routes/Mentor/Mentor";
 import Contact from "./routes/Contact/Contact";
 import Alumni  from "./routes/Alumni/Alumni";
+import Events from './routes/Events/Events';
 
 import './App.css';
 import "./index.css";
@@ -20,6 +21,7 @@ function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/alumni" element={<Alumni />} />
+        <Route path="/events" element={<Events />} />
       </Routes>
    </>
   );
