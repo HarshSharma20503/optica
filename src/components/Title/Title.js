@@ -13,7 +13,7 @@ function Title() {
             </h1>
         </div>
         <div className="jumping_arrow">
-          <i className="fa fa-angle-double-down" />
+          <i className="fa fa-angle-double-down " />
         </div>
     </div>
   )

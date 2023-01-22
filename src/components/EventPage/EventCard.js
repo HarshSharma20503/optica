@@ -1,16 +1,16 @@
-import { Col } from "react-bootstrap"
 import "./EventPage.scss"
 
-export const EventCard = ({title,description,imgUrl})=>{
+export const EventCard = (props)=>{
     return(
-        <Col sm={6} md={4}>
-            <div className="proj-imgbx">
-                <img src={imgUrl} alt="" />
-                <div className="proj-txtx">
-                    <h4>{title}</h4>
-                    <span>{description}</span>
-                </div>
-            </div>
-        </Col>
+      <div className="event-wrapper">
+        <div className="event-Wrappercard">
+          <img loading="lazy" src={props.imgsrc} alt={props.title} />{" "}
+          <div className="event-info">
+            <h1 className="event-card_name">{props.title}</h1>
+            <p>{props.description}</p>
+          </div>
+        </div>
+      </div>
+      
     )
 }

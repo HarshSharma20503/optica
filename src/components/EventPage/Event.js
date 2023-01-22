@@ -1,55 +1,34 @@
 import React from 'react'
-import { Col, Container, Row, Nav, Tab} from 'react-bootstrap'
-import { EventCard } from './EventCard'
-import eventData from './EventData'
+import {eventData2018_19, eventData2020_21, eventData2022_23} from './EventData'
 import './EventPage.scss'
+import YearButton from '../YearButton/YearButton'
+import { EventCard } from './EventCard';
 
 const event = () => {
     
   return (
-    <section className="project" id="project">
-        <Container>
-            <Row>
-                <Col>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                  <Tab.Content id="slideInUp" className= "animate__animated animate__slideInUp">
-                    <Tab.Pane eventKey="first">
-                      <Row>
-                        {
-                          eventData.map((project, index) => {
-                            return (
-                              <EventCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                  </Tab.Content>
-                </Tab.Container>
-                </Col>
-            </Row>
-        </Container>
-    </section>
+
+    <div className="events-container">
+      <div className="year-buttons">
+        <YearButton text='2022-23'/>
+        <YearButton text='2020-21'/>
+        <YearButton text='2018-19'/>
+      </div>
+      <div className="event-card-container">
+        
+      {eventData2022_23.map((val,ind)=>{
+          return (
+            <EventCard 
+              key={ind} 
+              imgsrc={val.imgUrl} 
+              title={val.title} 
+              description={val.description}
+            />
+          )
+        })}
+
+      </div>
+    </div>
   )
 }
 

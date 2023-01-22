@@ -3,7 +3,6 @@ import React from 'react'
 import Card from "../Card/Card";
 import CoreTeamData from './CoreTeamInfo';
 
-
 function CoreTeam() {
   return (
     <div className="team_container">
