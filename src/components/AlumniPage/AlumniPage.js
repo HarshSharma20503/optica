@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Card from "../Card/Card";
 import SideHeading from "../SideHeading/SideHeading";
 import YearButton from "../YearButton/YearButton";
-import {FoundingMember, AluminiData2020_21, AluminiData2021_22, AluminiData2019_20, AluminiData2018_19} from "./AluminiData";
+import {FoundingMember, AluminiData2020_21, AluminiData2021_22, AluminiData2019_20} from "./AluminiData";
 
 
 function AlumniPage() {
@@ -19,8 +19,6 @@ function AlumniPage() {
             setAluminiData(AluminiData2020_21);
         } else if(year==='2019-20') {
             setAluminiData(AluminiData2019_20);
-        } else if(year==='2018-19') {
-            setAluminiData(AluminiData2018_19);
         }
     },[year]);
 
@@ -61,7 +59,6 @@ function AlumniPage() {
                     <YearButton text="2021-22" SetYear={SetYear}/>
                     <YearButton text="2020-21" SetYear={SetYear}/>
                     <YearButton text="2019-20" SetYear={SetYear}/>
-                    <YearButton text="2018-19" SetYear={SetYear}/>
                 </div>
                 <div className="alumni_founders_cards">
                     

@@ -1,29 +1,36 @@
 const FoundingMember = [
     {
-        imgsrc:"/images/luv chadha.png",
-        name : "Luv Chadha",
-        designation : "President",
+        imgsrc:"/images/2018-19 alumni/avni handa-secretary.jpeg",
+        name : "Avni Handa",
+        designation : "Secretary",
         instaLink : "/",
         linkedinLink : "/",
     },
     {
-        imgsrc:"/images/luv chadha.png",
-        name : "Luv Chadha",
-        designation : "President",
+        imgsrc:"/images/2018-19 alumni/ishan joshi-p.jpeg",
+        name : "Ishan Joshi",
+        designation : "PRESIDENT",
         instaLink : "/",
         linkedinLink : "/",
     },
     {
-        imgsrc:"/images/luv chadha.png",
-        name : "Luv Chadha",
-        designation : "President",
+        imgsrc:"/images/2018-19 alumni/kuvam uppal-vp.jpeg",
+        name : "Kuvam Uppal",
+        designation : "Vice President",
         instaLink : "/",
         linkedinLink : "/",
     },
     {
-        imgsrc:"/images/luv chadha.png",
-        name : "Luv Chadha",
-        designation : "President",
+        imgsrc:"/images/2018-19 alumni/sanya pandey-treasurer.jpeg",
+        name : "Sanya Pandey",
+        designation : "Treasurer",
+        instaLink : "/",
+        linkedinLink : "/",
+    },
+    {
+        imgsrc:"/images/2018-19 alumni/disha jain.jpeg",
+        name : "Disha Jain",
+        designation : "Member",
         instaLink : "/",
         linkedinLink : "/",
     }
@@ -256,44 +263,7 @@ const AluminiData2021_22 = [
             ];
 
 
-            const AluminiData2018_19 = [
-                {
-                    imgsrc:"/images/2018-19 alumni/avni handa-secretary.jpeg",
-                    name : "Avni Handa",
-                    designation : "Secretary",
-                    instaLink : "/",
-                    linkedinLink : "/",
-                },
-                {
-                    imgsrc:"/images/2018-19 alumni/ishan joshi-p.jpeg",
-                    name : "Ishan Joshi",
-                    designation : "PRESIDENT",
-                    instaLink : "/",
-                    linkedinLink : "/",
-                },
-                {
-                    imgsrc:"/images/2018-19 alumni/kuvam uppal-vp.jpeg",
-                    name : "Kuvam Uppal",
-                    designation : "Vice President",
-                    instaLink : "/",
-                    linkedinLink : "/",
-                },
-                {
-                    imgsrc:"/images/2018-19 alumni/sanya pandey-treasurer.jpeg",
-                    name : "Sanya Pandey",
-                    designation : "Treasurer",
-                    instaLink : "/",
-                    linkedinLink : "/",
-                },
-                {
-                    imgsrc:"/images/2018-19 alumni/disha jain.jpeg",
-                    name : "Disha Jain",
-                    designation : "Member",
-                    instaLink : "/",
-                    linkedinLink : "/",
-                },
-               
-                ];
+            
 
 
-    export {FoundingMember, AluminiData2020_21, AluminiData2021_22, AluminiData2019_20, AluminiData2018_19};
+    export {FoundingMember, AluminiData2020_21, AluminiData2021_22, AluminiData2019_20};
