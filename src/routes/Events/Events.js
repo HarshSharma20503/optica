@@ -7,7 +7,7 @@ const Events = () => {
   return (
     <>
         <Navbar/>
-        <PageName page_heading="Past Events"/>
+        <PageName page_heading="PAST EVENTS"/>
         <Event />
     </>
   )
