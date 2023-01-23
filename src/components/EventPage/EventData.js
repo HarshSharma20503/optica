@@ -23,7 +23,7 @@ const eventData2022_23 = [
 
 const eventData2020_21 = [
     {
-        title: "Codeorate",
+        title: "How are You",
         description: "Cp workshop held by one and only priyansh aggarwal",
         imgUrl: "/images/events/code-orate.jpeg",
     },
@@ -42,7 +42,7 @@ const eventData2020_21 = [
 
 const eventData2018_19 = [
     {
-        title: "Codeorate",
+        title: "Hello Word",
         description: "Cp workshop held by one and only priyansh aggarwal",
         imgUrl: "/images/events/code-orate.jpeg",
     },
