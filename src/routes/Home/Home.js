@@ -3,6 +3,7 @@ import About from '../../components/About/About'
 import NavBar from "../../components/NavBar/NavBar"
 import Title from '../../components/Title/Title'
 import MentorInfo from '../../components/MentorInfo/MentorInfo'
+import Footer from '../../components/Footer/Footer'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Title />
       <About />
       <MentorInfo/>
+      <Footer/>
     </div>
   )
 }

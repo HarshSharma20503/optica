@@ -12,7 +12,8 @@
             width: 80%;
             border: 1px solid #e9a604;
             border-radius: 5px;
-
+            animation: Fade_In 1 2s;
+          
         }
     }
 
@@ -50,11 +51,12 @@
         }
 
     }
-    .infobox_3_info{
-        p{
+
+    .infobox_3_info {
+        p {
             font-size: 1.2rem;
             text-align: center;
-            line-height: 2rem;  
+            line-height: 2rem;
         }
     }
 }
