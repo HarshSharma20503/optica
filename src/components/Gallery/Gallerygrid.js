@@ -7,5 +7,4 @@ export const Gallerygrid = () => {
   )
 }
 
-
 export default Gallerygrid;
