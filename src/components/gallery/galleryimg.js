@@ -121,4 +121,4 @@ const gallery2019=[
     },
 ]
 
-export default {gallery2022,gallery2021,gallery2019};
+export {gallery2022,gallery2021,gallery2019};
