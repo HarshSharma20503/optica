@@ -121,7 +121,7 @@
       font-size: large;
     }
     p{
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 }
@@ -137,8 +137,11 @@
   .event-wrapper{
     .event-Wrappercard{
       .event-info{
+        h1{
+          font-size: large;
+        }
         p{
-          font-size: 15px;
+          font-size: 10px;
         }
       }
     }
