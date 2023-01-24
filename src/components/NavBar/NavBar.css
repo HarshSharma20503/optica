@@ -56,7 +56,7 @@ section img {
         transition: 0.3s;
     }
 
-    .nav-menu.active {
+    .nav-menu.mobile {
         left: 0;
     }
 

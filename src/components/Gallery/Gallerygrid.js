@@ -1,5 +1,5 @@
 import React from 'react'
-import  {gallery2022,gallery2021,gallery2019} from './Galleryimg.js';
+// import  {gallery2022,gallery2021,gallery2019} from './Galleryimg.js';
 
 export const Gallerygrid = () => {
   return (

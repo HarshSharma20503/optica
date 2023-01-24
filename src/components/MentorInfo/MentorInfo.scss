@@ -1,57 +1,64 @@
 .mentors {
-    background: #03031a;
+    // background: #03031a;
+    background-color: #020212;
     width: 100%;
-    padding: 6rem 1rem;
+    padding: 4rem 1rem;
 
+    .mentor_title {
+        font-size: 3rem;
+        font-family: 'Orbitron', sans-serif;
+        text-align: center;
+        margin: 3.5rem 0;
+    }
 
-
-.mentor-card-container {
-    max-width: 1500px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 40px;
-}
-
-.mentor-card {
-    border: 1px solid white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    /* height : 80vh; */
-    height: auto;
-}
-
-.mentor-card:hover {
-    background-color: rgba(2, 2, 69, 0.484);
-}
-
-.mentor-card p {
-    padding: 10px 0;
-}
-
-.mentor_name {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.mentor_designation {
-    font-size: 1.5rem;
-}
-
-.mentor_content {
-    font-size: 1.2rem;
-}
-}
-@media screen and (max-width:1080px) {
-    .mentors{
     .mentor-card-container {
-        max-width: 90%;
+        max-width: 1500px;
         margin: auto;
-        grid-template-columns: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 40px;
+    }
+
+    .mentor-card {
+        border: 1px solid #e9a604;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        /* height : 80vh; */
+        height: auto;
+    }
+
+    .mentor-card:hover {
+        background-color: rgba(2, 2, 69, 0.484);
+    }
+
+    .mentor-card p {
+        padding: 10px 0;
+    }
+
+    .mentor_name {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .mentor_designation {
+        font-size: 1.5rem;
+    }
+
+    .mentor_content {
+        font-size: 1.2rem;
     }
 }
+
+@media screen and (max-width:1080px) {
+    .mentors {
+        .mentor-card-container {
+            max-width: 90%;
+            margin: auto;
+            grid-template-columns: auto;
+        }
+    }
 }
