@@ -7,6 +7,7 @@
   color: white;
   /* background-color: #03031a; */
   font-family: 'Quicksand', sans-serif;
+  /* overflow-x: hidden; */
 }
 
 a {
@@ -58,9 +59,11 @@ body {
 
   0% {
     transform: scale(1, 1);
+    /* overflow-x : hidden; */
   }
   50% {
     transform: scale(1.25, 1.25);
+    overflow-x : hidden;
   }
   100% {
     transform: scale(1, 1);
