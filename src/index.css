@@ -18,6 +18,11 @@ body {
   background-color: #03031a;
 }
 
+li a.active{
+  border-bottom: 2px solid white;
+  color : greenyellow;
+  }
+
 @keyframes animateDown {
 
   0%,
