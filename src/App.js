@@ -9,6 +9,7 @@ import Gallery from './routes/Gallery/Gallery';
 
 import './App.css';
 import "./index.css";
+import Mentors from './routes/MentorDetails/Mentors';
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
         <Route path="/alumni" element={<Alumni />} />
         <Route path="/events" element={<Events />} />
         <Route path="/gallery" element={<Gallery />} />
-        
+        <Route path='/mentors' element={<Mentors/>} />
       </Routes>
    </>
   );
