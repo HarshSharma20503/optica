@@ -47,7 +47,7 @@ margin-left: 20px;
 
 .Image-gallery{
   height: 100%;
-  
+  margin-right: 2rem;
 }
 
 
@@ -75,6 +75,8 @@ margin-left: 20px;
         margin-bottom: 3rem;
       }
 
-      
+      .Image-gallery{
+        margin-left: 2rem;
+      }
 }
  

@@ -18,20 +18,55 @@ body {
   background-color: #03031a;
 }
 
-body::-webkit-scrollbar {
+/* scrollbar */
+::-webkit-scrollbar-track
+{
+	border: 5px solid #03031a;
+	background-color: #b2bec3;
+}
+::-webkit-scrollbar
+{
+	width: 15px;
+	background-color: #dfe6e9;
+}
+::-webkit-scrollbar-thumb
+{
+	background-color: #74b9ff;
+	border-radius: 10px;
+}
+::-webkit-scrollbar:horizontal {
+  height: 0;
+  width: 0;
   display: none;
 }
+/* scroll bar ends */
 
-/* Hide scrollbar for IE, Edge and Firefox */
-body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
+/* hover and active effect on navbar */
 li a.active{
   border-bottom: 2px solid white;
   color : greenyellow;
   }
+
+  a {
+    position: relative;
+  }
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 1;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+/* hover and active effect on navbar ends*/
 
 @keyframes animateDown {
 
