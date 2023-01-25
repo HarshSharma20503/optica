@@ -2,7 +2,7 @@ import React from "react";
 import ImageGallery from "react-image-gallery";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { useState,useEffect } from "react";
-
+import SideHeading from "../SideHeading/SideHeading";
 import {gallery2022,gallery2019,gallery2021} from "./GalleryimgData"
 import "react-image-gallery/styles/css/image-gallery.css";
 import "./Gallerygrid.css"
@@ -25,6 +25,7 @@ export default function Gallerygrid() {
     }
 },[eventYear]);
 
+  
   function renderLeftNav(onClick, disabled) {
     return (
       <button
@@ -55,16 +56,28 @@ export default function Gallerygrid() {
 
   return (
     <div className="App">
-      <div className="year-buttons">
-        <YearButton text='2022' SetEventYear={setEventYear}/>
-        <YearButton text='2021' SetEventYear={setEventYear}/>
-        <YearButton text='2019' SetEventYear={setEventYear}/>
-      </div>
+      <div className="gallery-container">
+         <div className="gallery-heading">
+             <div></div>
+                    <SideHeading
+                        side_heading="Glimpses of our events from past years"
+                     />
+         
+            <YearButton className='year-buttons' text='2022' SetEventYear={setEventYear}/>
+            <YearButton className='year-buttons'text='2021' SetEventYear={setEventYear}/>
+            <YearButton className='year-buttons'text='2019' SetEventYear={setEventYear}/>
+        
+
+       </div>
+
+      <div className="Image-gallery">
       <ImageGallery
         items={galleryData}
         renderLeftNav={renderLeftNav}
         renderRightNav={renderRightNav}
       />
+      </div>
+    </div>
     </div>
   );
 }
