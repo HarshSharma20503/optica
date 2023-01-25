@@ -10,6 +10,7 @@ import Gallery from './routes/Gallery/Gallery';
 import './App.css';
 import "./index.css";
 import Mentors from './routes/MentorDetails/Mentors';
+import Jscop from './routes/JSCOP/Jscop';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/events" element={<Events />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path='/mentors' element={<Mentors/>} />
+        <Route path='/jscop' element={<Jscop/>} />
       </Routes>
    </>
   );

@@ -45,7 +45,7 @@ function MentorInfo() {
     // </div>
     <>
       <div className="mentor">
-        <h1 className="mentor-title">Mentors</h1>
+        <h1 className="mentor-title">OUR MENTORS</h1>
         <div className="mentor-card-container">
           <div className="mentor-details">
             <div className="mentor-image">

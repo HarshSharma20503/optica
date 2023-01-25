@@ -4,18 +4,20 @@
     align-items: center;
     padding: 1rem;
     height: 10vh;
-    position : fixed;
-    width : 100%;
+    position: fixed;
+    width: 100%;
     z-index: 10;
-    background-color : rgba(2, 2, 69, 0);
+    background-color: rgba(2, 2, 69, 0);
 
 }
-.header-bg{
-    background-color : rgba(2, 2, 69, 0.644);
-    transition : 0.5s
+
+.header-bg {
+    background-color: rgba(2, 2, 69, 0.644);
+    transition: 0.5s
 }
+
 .header a {
-    height : 10vh;
+    height: 10vh;
 }
 
 .nav-menu {
@@ -72,8 +74,9 @@ section img {
         display: initial;
         margin-bottom: 24px;
     }
-    ul{
-        background-color : rgb(2, 2, 69);
+
+    ul {
+        background-color: rgb(2, 2, 69);
     }
 
     section img {
