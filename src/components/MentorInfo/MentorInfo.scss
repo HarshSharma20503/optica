@@ -1,64 +1,159 @@
-.mentors {
-    // background: #03031a;
-    background-color: #020212;
-    width: 100%;
-    padding: 4rem 1rem;
+// .mentors {
+//     // background: #03031a;
+//     background-color: #020212;
+//     width: 100%;
+//     padding: 4rem 1rem;
 
-    .mentor_title {
-        font-size: 3rem;
-        font-family: 'Orbitron', sans-serif;
-        text-align: center;
-        margin: 3.5rem 0;
-    }
+//     .mentor_title {
+//         font-size: 3rem;
+//         font-family: 'Orbitron', sans-serif;
+//         text-align: center;
+//         margin: 3.5rem 0;
+//     }
 
-    .mentor-card-container {
-        max-width: 1500px;
-        margin: auto;
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-gap: 40px;
-    }
+//     .mentor-card-container {
+//         max-width: 1500px;
+//         margin: auto;
+//         display: grid;
+//         grid-template-columns: auto auto auto;
+//         grid-gap: 40px;
+//     }
 
-    .mentor-card {
-        border: 1px solid #e9a604;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem;
-        /* height : 80vh; */
-        height: auto;
-    }
+//     .mentor-card {
+//         border: 1px solid #e9a604;
+//         text-align: center;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         align-items: center;
+//         padding: 1rem;
+//         /* height : 80vh; */
+//         height: auto;
+//     }
 
-    .mentor-card:hover {
-        background-color: rgba(2, 2, 69, 0.484);
-    }
+//     .mentor-card:hover {
+//         background-color: rgba(2, 2, 69, 0.484);
+//     }
 
-    .mentor-card p {
-        padding: 10px 0;
-    }
+//     .mentor-card p {
+//         padding: 10px 0;
+//     }
 
-    .mentor_name {
-        font-size: 2rem;
-        font-weight: bold;
-    }
+//     .mentor_name {
+//         font-size: 2rem;
+//         font-weight: bold;
+//     }
 
-    .mentor_designation {
-        font-size: 1.5rem;
-    }
+//     .mentor_designation {
+//         font-size: 1.5rem;
+//     }
 
-    .mentor_content {
-        font-size: 1.2rem;
-    }
-}
+//     .mentor_content {
+//         font-size: 1.2rem;
+//     }
+// }
 
-@media screen and (max-width:1080px) {
-    .mentors {
-        .mentor-card-container {
-            max-width: 90%;
-            margin: auto;
-            grid-template-columns: auto;
+// @media screen and (max-width:1080px) {
+//     .mentors {
+//         .mentor-card-container {
+//             max-width: 90%;
+//             margin: auto;
+//             grid-template-columns: auto;
+//         }
+//     }
+// }
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap");
+
+.mentor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+
+  .mentor-title {
+    font-size: 3rem;
+    font-family: "Orbitron", sans-serif;
+    padding-bottom: 2rem;
+  }
+  .mentor-card-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .mentor-details {
+      position: relative;
+      width: 14rem;
+      height: 14rem;
+      margin: 4rem;
+
+      .mentor-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        transition: all 0.5s ease-in-out;
+
+        img {
+          width: 14rem;
+          height: 14rem;
+          object-fit: cover;
+          resize: both;
+          border-radius: 2rem;
         }
+      }
+
+      .mentor-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        z-index: 1;
+        align-items: flex-end;
+        text-align: center;
+        transition: 0.5s ease-in-out;
+        border-radius: 2rem;
+
+        h2 {
+          display: block;
+          font-size: 1rem;
+          color: #111;
+          font-weight: 500;
+          line-height: 2rem;
+          letter-spacing: 1px;
+        }
+        span {
+          color: #555;
+          font-size: 0.8rem;
+          font-weight: 300;
+          letter-spacing: 2px;
+        }
+        .mentor-button {
+          background-color: rgb(129, 191, 244);
+          border-radius: 2rem;
+          padding: 0.15rem 0.4rem;
+          cursor: pointer;
+        }
+      }
     }
+    .mentor-details:hover {
+      .mentor-image {
+        transform: translate(-3.5rem, -3.5rem);
+      }
+      .mentor-content {
+        transform: translate(3.5rem, 3.5rem);
+      }
+    }
+  }
 }
+
+/*# sourceMappingURL=main.css.map */
