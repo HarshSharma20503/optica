@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
 
+.title{
+    overflow: hidden;
+}
 
 .title-bg {
     width: 100%;
@@ -7,8 +10,7 @@
     position: relative;
     background-image: linear-gradient(rgba(23, 28, 40, 0), #03031a), url("/public/images/background1.jpg");
     background-size: cover;
-    animation: AnimateBG 1 3s;
-    -ms-overflow-style: none;
+    animation: AnimateBG 1 5s;
 }
 
 .bg {
