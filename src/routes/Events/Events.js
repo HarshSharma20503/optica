@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../../components/NavBar/NavBar'
 import PageName from '../../components/PageName/PageName'
 import Event from '../../components/EventPage/Event'
+import Footer from '../../components/Footer/Footer'
 
 const Events = () => {
   return (
@@ -9,6 +10,7 @@ const Events = () => {
         <Navbar/>
         <PageName page_heading="PAST EVENTS"/>
         <Event />
+        <Footer/>
     </>
   )
 }

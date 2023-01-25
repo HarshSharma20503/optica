@@ -4,6 +4,7 @@ import "./MentorInfo.scss"
 function MentorInfo() {
     return (
         <div className="mentors">
+            <h1 className="mentor_title">OUR MENTORS</h1>
             <div className="mentor-card-container">
                 
                 <div className="mentor-card">

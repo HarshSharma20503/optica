@@ -1,6 +1,6 @@
 import "./NavBar.css";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink} from "react-router-dom";
 
 const Navbar = () => {
 
@@ -23,24 +23,24 @@ const Navbar = () => {
             <Link to="/">
                 <section> <img src="/images/logo.png" alt="" width="300px" /> </section>
             </Link>
-            <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <ul className={click ? "nav-menu mobile" : "nav-menu"}>
                 <li>
-                    <Link to="/"> Home </Link>
+                    <NavLink to="/" > Home </NavLink>
                 </li>
                 <li>
-                    <Link to="/team"> Team </Link>
+                    <NavLink to="/team" > Team </NavLink>
                 </li>
                 <li>
-                    <Link to="/alumni"> Alumni </Link>
+                    <NavLink to="/alumni"> Alumni </NavLink>
                 </li>
                 <li>
-                    <Link to="/events"> Events </Link>
+                    <NavLink to="/events"> Events </NavLink>
                 </li>
                 <li>
-                    <Link to="/gallery"> Gallery</Link>
+                    <NavLink to="/gallery"> Gallery</NavLink>
                 </li>
                 <li>
-                    <Link to="/jscob"> Jscop </Link>
+                    <NavLink to="/jscop"> JSCOP </NavLink>
                 </li>
             </ul>
             <div className="hamburger" onClick={handleclick}>

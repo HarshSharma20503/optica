@@ -8,7 +8,7 @@
     height : auto;
 
     .copyright{
-        margin : 5px 0;
+        margin : 5px 0 0 0;
     }
     .socials{
         margin : 10px 0;
@@ -37,15 +37,7 @@
             font-size : 0.8rem;
             text-align: center;
         }
-        .icon{
-            margin : 0 10px;
     
-            &:hover{
-                color: rgb(255, 196, 0);
-            }
-        }
-    
-      
     }
 
 }
