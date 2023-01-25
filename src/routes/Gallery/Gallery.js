@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/NavBar/NavBar'
 import PageName from '../../components/PageName/PageName'
-// import Gallerygrid from '../../components/Gallery/Gallerygrid'
+import Gallerygrid from '../../components/Gallery/Gallerygrid'
 import Footer from '../../components/Footer/Footer'
 
 export const Gallery = () => {
@@ -9,7 +9,7 @@ export const Gallery = () => {
     <>
         <Navbar/>
         <PageName page_heading="GALLERY"/>
-        {/* <Gallerygrid /> */}
+        <Gallerygrid />
         <Footer />
     </>
   )
