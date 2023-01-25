@@ -1,0 +1,16 @@
+.image-gallery-left-nav,
+.image-gallery-right-nav {
+  padding: 50px 10px;
+  top: 100%;
+  transform: translateY(-5%);
+  z-index: 1;
+  position:absolute;
+  /* background:rgba(0,0,0,0); */
+  border-color: #fff;
+  top:25%;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}

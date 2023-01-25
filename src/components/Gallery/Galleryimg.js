@@ -1,23 +1,23 @@
 const gallery2022=[
     {
-        original:"/images/gallery/2022 gallery/2022.jpg",
-        thumbnail:"/images/gallery/2022 gallery/2022.jpg",
+        original:"/images/gallery images/2022 gallery/2022.jpg",
+        thumbnail:"/images/gallery images/2022 gallery/2022.jpg",
     },
     {
-        original:"/images/gallery/2022 gallery/2022a.jpeg",
-        thumbnail:"/images/gallery/2022 gallery/2022a.jpeg",
+        original:"/images/gallery images/2022 gallery/2022a.jpeg",
+        thumbnail:"/images/gallery images/2022 gallery/2022a.jpeg",
     },
     {
-        original:"/images/gallery/2022 gallery/2022b.png",
-        thumbnail:"/images/gallery/2022 gallery/2022b.png",
+        original:"/images/gallery images/2022 gallery/2022b.png",
+        thumbnail:"/images/gallery images/2022 gallery/2022b.png",
     },
     {
-        original:"/images/gallery/2022 gallery/2022c.jpg",
-        thumbnail:"/images/gallery/2022 gallery/2022c.jpg",
+        original:"/images/gallery images/2022 gallery/2022c.jpg",
+        thumbnail:"/images/gallery images/2022 gallery/2022c.jpg",
     },
     {
-        original:"/images/gallery/2022 gallery/2022d.jpg",
-        thumbnail:"/images/gallery/2022 gallery/2022d.jpg",
+        original:"/images/gallery images/2022 gallery/2022d.jpg",
+        thumbnail:"/images/gallery images/2022 gallery/2022d.jpg",
     },
 ]
 
@@ -121,4 +121,4 @@ const gallery2019=[
     },
 ]
 
-export {gallery2022,gallery2021,gallery2019};
+export {gallery2022};
