@@ -18,6 +18,16 @@ body {
   background-color: #03031a;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 li a.active{
   border-bottom: 2px solid white;
   color : greenyellow;
