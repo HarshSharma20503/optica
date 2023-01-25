@@ -43,8 +43,9 @@ body {
 
 /* hover and active effect on navbar */
 li a.active{
-  border-bottom: 2px solid white;
-  color : greenyellow;
+  /* border-bottom: 2px solid white; */
+  color : rgb(82, 180, 255);
+  font-weight: 700;
   }
 
   a {
