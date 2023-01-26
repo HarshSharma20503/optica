@@ -4,9 +4,9 @@ import React from 'react'
 function JoinUs() {
     return (
         <div className="planning" id="planning">
-            <div data-aos="fade-up" data-aos-anchor-placement="center-center">
+            {/* <div data-aos="fade-up" data-aos-anchor-placement="center-center"> */}
                 <h1 className="plan_title">JOIN US</h1>
-            </div>
+            {/* </div> */}
 
             <div className="plan-options">
                 <div>

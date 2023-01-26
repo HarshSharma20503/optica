@@ -14,7 +14,7 @@
     font-size: 3rem;
     font-family: "Orbitron", sans-serif;
     text-align: center;
-    margin: 5rem;
+    margin: 5rem auto;
 }
 
 .planning h1:before {
@@ -80,7 +80,7 @@
 .plan-feature li {
     margin-bottom: 16px;
     display: flex;
- }
+}
 
 .plan-choose {
     width: 90%;
@@ -96,7 +96,7 @@
     cursor: pointer;
 }
 
-a {
+.plan a{
     color: white;
 }
 
@@ -116,12 +116,14 @@ a {
     gap: 3%;
 }
 
-@media screen and (max-width: 1080px){
-.planning{
-    display : flex;
-    flex-direction: column;
-}
-.plan-options{
-    grid-template-columns: auto;
-}
+@media screen and (max-width: 1080px) {
+    .planning {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plan-options {
+        grid-template-columns: auto;
+        margin: 1rem 2rem 10rem 2rem;
+    }
 }
