@@ -15,18 +15,18 @@ a {
 }
 
 body {
-  background-color: #03031a;
+  background-color: #171c28;
 }
 
 /* scrollbar */
 ::-webkit-scrollbar-track
 {
-	border: 5px solid #03031a;
+	border: 5px solid #171c28;
 	background-color: #b2bec3;
 }
 ::-webkit-scrollbar
 {
-	width: 15px;
+	width: 10px;
 	background-color: #dfe6e9;
 }
 ::-webkit-scrollbar-thumb
@@ -44,7 +44,7 @@ body {
 /* hover and active effect on navbar */
 li a.active{
   /* border-bottom: 2px solid white; */
-  color : rgb(82, 180, 255);
+  color :  #74b9ff;
   font-weight: 700;
   }
 
