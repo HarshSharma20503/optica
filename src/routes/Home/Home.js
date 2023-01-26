@@ -4,6 +4,7 @@ import NavBar from "../../components/NavBar/NavBar"
 import Title from '../../components/Title/Title'
 import MentorInfo from '../../components/MentorInfo/MentorInfo'
 import Footer from '../../components/Footer/Footer'
+import JoinUs from '../../components/JoinUs/JoinUs'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Title />
       <About />
       <MentorInfo/>
+      <JoinUs />
       <Footer/>
     </div>
   )

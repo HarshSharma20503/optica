@@ -4,11 +4,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: white;
-  /* background-color: #03031a; */
+  color : white;
   font-family: 'Quicksand', sans-serif;
-  /* overflow-x: hidden; */
-}
+  }
 
 a {
   text-decoration: none;
@@ -19,54 +17,58 @@ body {
 }
 
 /* scrollbar */
-::-webkit-scrollbar-track
-{
-	border: 5px solid #171c28;
-	background-color: #b2bec3;
+::-webkit-scrollbar-track {
+  border: 5px solid #171c28;
+  background-color: #b2bec3;
 }
-::-webkit-scrollbar
-{
-	width: 10px;
-	background-color: #dfe6e9;
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #dfe6e9;
 }
-::-webkit-scrollbar-thumb
-{
-	background-color: #74b9ff;
-	border-radius: 10px;
+
+::-webkit-scrollbar-thumb {
+  background-color: #74b9ff;
+  border-radius: 10px;
 }
+
 ::-webkit-scrollbar:horizontal {
   height: 0;
   width: 0;
   display: none;
 }
+
 /* scroll bar ends */
 
 /* hover and active effect on navbar */
-li a.active{
+li a.active {
   /* border-bottom: 2px solid white; */
-  color :  #74b9ff;
+  color: #74b9ff;
   font-weight: 700;
-  }
+}
 
-  a {
-    position: relative;
-  }
-  a:after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 1;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #fff;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
-  a:hover:after { 
-    width: 100%; 
-    left: 0; 
-  }
+.header a {
+  position: relative;
+}
+
+.header a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 1;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.header a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
 /* hover and active effect on navbar ends*/
 
 @keyframes animateDown {
@@ -112,10 +114,12 @@ li a.active{
     transform: scale(1, 1);
     /* overflow-x : hidden; */
   }
+
   50% {
     transform: scale(1.25, 1.25);
-    overflow-x : hidden;
+    overflow-x: hidden;
   }
+
   100% {
     transform: scale(1, 1);
   }
