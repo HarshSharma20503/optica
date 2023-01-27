@@ -5,6 +5,7 @@ import Title from '../../components/Title/Title'
 import MentorInfo from '../../components/MentorInfo/MentorInfo'
 import Footer from '../../components/Footer/Footer'
 import JoinUs from '../../components/JoinUs/JoinUs'
+import ContactUs from '../../components/ContactUs/ContactUs'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <About />
       <MentorInfo/>
       <JoinUs />
+      <ContactUs/>
       <Footer/>
     </div>
   )

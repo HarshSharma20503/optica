@@ -66,7 +66,8 @@ function MentorInfo() {
             {isShown3 && <h2 className="mentor-name">Dr. ASHISH BHATNAGAR</h2>}
           </div>
         </div>
-      </div>
+      </div> 
+      
     </>
   );
 }
