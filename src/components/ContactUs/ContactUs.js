@@ -4,6 +4,7 @@ function ContactUs() {
   return (
     <>
       <div className="contactUs">
+        <h1>Contact Us</h1>
       <div class="ContactUs-container">
         <div class="ContactUs-content">
           <div class="ContactUs-left-side">
@@ -32,6 +33,9 @@ function ContactUs() {
             <form action="#">
               <div class="ContactUs-input-box">
                 <input type="text" placeholder="Enter your name" />
+              </div>
+              <div class="ContactUs-input-box">
+                <input type="text" placeholder="Enter your number" />
               </div>
               <div class="ContactUs-input-box">
                 <input type="text" placeholder="Enter your email" />
