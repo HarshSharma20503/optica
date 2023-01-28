@@ -8,12 +8,12 @@
     width: 100%;
     z-index: 10;
     background-color: rgba(2, 2, 69, 0);
-
 }
 
 .header-bg {
-    background-color: rgba(2, 2, 69, 0.644);
-    transition: 0.5s
+    background-color: rgb(23, 28, 40,0.75);
+    transition: 0.5s;
+    backdrop-filter: blur(2px);
 }
 
 .header a {

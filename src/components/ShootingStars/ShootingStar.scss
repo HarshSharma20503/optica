@@ -19,9 +19,9 @@ content: '';
 position: absolute;
 top: 50%;
 transform: translateY(-50%);
-// width: 300px;
-max-width: 300px;
-object-fit: contain;
+// width: 50px;
+// max-width: 300px;
+object-fit: cover;
 height: 1px;
 background: linear-gradient(90deg,#fff,transparent);
 }
