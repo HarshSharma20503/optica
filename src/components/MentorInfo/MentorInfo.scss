@@ -103,59 +103,76 @@
 
 //mentor details css
 
-.main {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  .about-us {
-    display: flex;
-    padding: 20px;
-    align-items: center;
-    width: 85%;
-    margin: auto;
-    img {
-      flex: 0 50%;
-      width: 300px;
-      height: 300px;
-      border-radius: 10px;
-    }
-    .content {
-      padding: 35px;
-      h2 {
-        color: #e9a604;
-        font-weight: bolder;
-        margin: 15px 0px;
+.mentor-info {
+  .about {
+    width: 100%;
+    padding: 25px;
+    background-color: #191919;
+    .main {
+      width: 1130px;
+      max-width: 95%;
+      // margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      img {
+        height: 300px;
+        width: 300px;
+        border-radius: 10px;
+     
       }
-
-      p {
-        font-size: large;
-        text-align: left;
-        color: rgb(255, 255, 255);
-        margin: 15px 0px;
-        line-height: 1.5;
+      .about-text {
+        width: 650px;
+        padding: 10px;
+        h2 {
+          text-transform: capitalize;
+          padding: 5px;
+          font-size: 30px;
+          color: rgb(176 233 235);
+        }
+        h3 {
+          padding: 5px;
+          font-size: 20px;
+          color: rgb(124 169 210);
+          text-transform: capitalize;
+          letter-spacing: 2px;
+        }
+        p {
+          color: rgb(253, 250, 247);
+          letter-spacing: 1px;
+          line-height: 28px;
+          font-size: 18px;
+         padding: 10px;
+        }
       }
     }
   }
 }
-@media (max-width: 768px) {
-  .about-us {
-     overflow-x: hidden;
-    flex-direction: column;
-    padding: 5px;
-    width: 90%;
-  }
-  .about-us img {
-    flex: 0 100%;
-    max-width: 100%;
-    margin: 0 0 10px 0;
-  }
-  .content {
+@media(max-width:768px){
+  .about{
+    .main{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      img{
+        flex: 0 100%;
+        max-width: 100%;
+      }
+      .about-text{
+        flex: 0 100%;
+        max-width: 100%;
+        padding: 15px;
+        h2,h3{
+          text-align: center;
+        }
+        p{
+          text-align: justify;
+        }
+      }
+    }
+    
    
-    flex: 0 100%;
-    max-width: 90%;
-    padding-top: 0px;
-    padding: 0px;
-   
   }
+  
+  
 }
