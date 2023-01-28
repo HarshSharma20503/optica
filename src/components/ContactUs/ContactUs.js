@@ -35,6 +35,9 @@ function ContactUs() {
                 <input type="text" placeholder="Enter your name" />
               </div>
               <div class="ContactUs-input-box">
+                <input type="text" placeholder="Enter your number" />
+              </div>
+              <div class="ContactUs-input-box">
                 <input type="text" placeholder="Enter your email" />
               </div>
               <div class="ContactUs-input-box ContactUs-message-box">
