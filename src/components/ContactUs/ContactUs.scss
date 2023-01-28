@@ -4,7 +4,15 @@
 .contactUs {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-bottom: 70px;
+  h1{
+    font-size: 3rem;
+    font-family: "Orbitron", sans-serif;
+    padding: 2rem;
+    text-align: center;
+  }
   .ContactUs-container {
     width: 85%;
     background: #fff;

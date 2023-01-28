@@ -4,6 +4,7 @@ function ContactUs() {
   return (
     <>
       <div className="contactUs">
+        <h1>Contact Us</h1>
       <div class="ContactUs-container">
         <div class="ContactUs-content">
           <div class="ContactUs-left-side">
