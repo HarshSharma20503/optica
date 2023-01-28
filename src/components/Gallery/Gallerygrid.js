@@ -6,6 +6,7 @@ import SideHeading from "../SideHeading/SideHeading";
 import { gallery2022, gallery2019, gallery2021 } from "./GalleryimgData"
 import "react-image-gallery/styles/css/image-gallery.css";
 import "./Gallerygrid.css"
+import Gallerybgimg from "./Gallerybgimg";
 
 import YearButton from '../YearButton/YearButton'
 
@@ -56,6 +57,28 @@ export default function Gallerygrid() {
 
   return (
     <div className="App">
+      <div className="Gallery">
+      <div className="recent">
+        Recent Highlights
+       </div>
+       <div className="gallery-imgcontainer">
+       <button className="handle left-handle"><i class="fa-sharp fa-solid fa-chevron-left fa-2x"></i></button>
+    <div className="gallery-items">
+        <Gallerybgimg />
+        <Gallerybgimg />
+        <Gallerybgimg />
+        <Gallerybgimg />
+        <Gallerybgimg />
+        <Gallerybgimg />
+        <Gallerybgimg />
+        <Gallerybgimg />
+        <Gallerybgimg />
+        <Gallerybgimg />
+        <Gallerybgimg />
+        <Gallerybgimg />
+    </div>
+    <button  className="handle right-handle"><i class="fa-sharp fa-solid fa-chevron-right fa-2x"></i></button>
+    </div>
       <div className="gallery-container">
         <div className="gallery-heading">
           <div></div>
@@ -77,6 +100,7 @@ export default function Gallerygrid() {
             renderRightNav={renderRightNav}
           />
         </div>
+      </div>
       </div>
     </div>
   );
