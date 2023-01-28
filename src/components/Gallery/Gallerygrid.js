@@ -35,8 +35,6 @@ export default function Gallerygrid() {
         disabled={disabled}
         onClick={onClick}
       >
-        {/* <FaArrowLeft size={30} color="#000" /> */}
-        {/* <i class="fa-solid fa-arrow-left-long fa-2xl" /> */}
         <i class="fa-sharp fa-solid fa-chevron-left fa-2x"></i>
       </div>
     );
@@ -51,8 +49,6 @@ export default function Gallerygrid() {
         disabled={disabled}
         onClick={onClick}
       >
-        {/* <FaArrowRight size={20} color="#000" /> */}
-        {/* <i class="fa-solid fa-arrow-right-long fa-2xl" /> */}
         <i class="fa-sharp fa-solid fa-chevron-right fa-2x"></i>
       </div>
     );
