@@ -51,7 +51,7 @@ li a.active {
   position: relative;
 }
 
-.header a:after {
+.header li a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 1;
   content: "";
