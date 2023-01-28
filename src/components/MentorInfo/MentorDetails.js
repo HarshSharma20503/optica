@@ -8,8 +8,8 @@ const MentorDetails = () => {
           <div className="main">
             <img src="/images/anuraj_panwar.jpg" alt="Mentor photos" />
             <div className="about-text">
-              <h2>FACULTY ADVISOR</h2>
-              <h3>Dr. ANURAJ PANWAR</h3>
+              <h2>Dr. ANURAJ PANWAR </h2>
+              <h3>FACULTY ADVISOR</h3>
               <p>
                 Dr. Anuraj Panwar is currently an Assistant Professor (Senior
                 Grade) in Department of Physics and Material Science, JIIT
@@ -33,8 +33,8 @@ const MentorDetails = () => {
           <div className="main">
             <img src="/images/manoj_tripathi.png" alt="Mentor photos" />
             <div className="about-text">
-              <h2>CO-FACULTY ADVISOR</h2>
-              <h3> Dr. Manoj Tripathi</h3>
+              <h2>Dr. Manoj Tripathi </h2>
+              <h3> CO-FACULTY ADVISOR</h3>
               <p>
                 Dr. Manoj Tripathi completed his Post Graduate degree (M.Sc. in
                 Physics) from Dr. Ram Manohar Lohia Avadh University, Faizabad
@@ -54,8 +54,8 @@ const MentorDetails = () => {
           <div className="main">
             <img src="/images/ashish_bhatnagar.jpg" alt="Mentor photos" />
             <div className="about-text">
-              <h2>CO-FACULTY ADVISOR</h2>
-              <h3> Dr. ASHISH BHATNAGAR</h3>
+              <h2>Dr. ASHISH BHATNAGAR</h2>
+              <h3>  CO-FACULTY ADVISOR</h3>
               <p>
                 Dr. Ashish Bhatnagar completed his Post Graduate degree (M.Sc.
                 in Physics) from University of Delhi, afterwards he joined
