@@ -72,4 +72,8 @@
 .image-gallery-right-nav{
   top : -85px;
 }
+
+.image-gallery-fullscreen-button{
+  display:none;
+}
 }
