@@ -10,7 +10,8 @@
     position: relative;
     background-image: linear-gradient(#171c2876, #171c28), url("/public/images/background1.jpg");
     background-size: cover;
-    animation: AnimateBG 1 5s;
+    animation: AnimateBG 1 3s;
+    z-index: 0;
 }
 
 .bg {
