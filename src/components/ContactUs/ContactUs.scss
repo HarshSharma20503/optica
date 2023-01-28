@@ -14,15 +14,16 @@
     text-align: center;
   }
   .ContactUs-container {
-    width: 85%;
-    background: #fff;
+    width: 65%;
+    // background: #fff;
+    background-color: transparent;
     border-radius: 6px;
     padding: 10px 10px 10px 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     .ContactUs-content {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
       .ContactUs-left-side {
         width: 25%;
         height: 100%;
@@ -37,7 +38,7 @@
           text-align: center;
           i {
             font-size: 30px;
-            color: #3e2093;
+            color: #74b9ff;
             margin-bottom: 10px;
           }
           .ContactUs-topic {
@@ -55,12 +56,12 @@
         }
       }
       .ContactUs-right-side {
-        width: 75%;
+        width: 60%;
         margin-left: 6px;
         .ContactUs-topic-text {
           font-size: 23px;
           font-weight: 600;
-          color: #3e2093;
+          color: #74b9ff;
         }
         form {
           .ContactUs-input-box {
@@ -73,11 +74,22 @@
               border: none;
               outline: none;
               font-size: 16px;
-              background: #f0f1f8;
+              background: rgb(240, 241, 248,1);
               border-radius: 6px;
               padding: 0 15px;
               color: #040306;
               resize: none;
+            }
+          }
+          .ContactUs-input-name{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: -10px;
+            .FirstName{
+              width: 49%;
+            }
+            .LastName{
+              width: 49%;
             }
           }
           .ContactUs-button {
@@ -93,7 +105,7 @@
               border: none;
               outline: none;
               font-size: 16px;
-              background: #f0f1f8;
+              background: rgb(240, 241, 248,1);;
               border-radius: 6px;
               padding: 0 15px;
               resize: none;
@@ -110,7 +122,7 @@
               border: none;
               padding: 8px 16px;
               border-radius: 6px;
-              background: #3e2093;
+              background: #74b9ff;
               cursor: pointer;
               transition: all 0.3s ease;
             }
@@ -144,6 +156,18 @@
   .ContactUs-container .ContactUs-content .ContactUs-right-side {
     width: 100%;
     margin-left: 0;
+    form{
+      .ContactUs-input-name{
+        flex-direction: column;
+        .FirstName{
+          width: 100%!important;
+          margin-bottom: -1.0px;
+        }
+        .LastName{
+          width: 100% !important;
+        }
+      }
+    }
   }
 }
 @media (max-width: 950px) {
