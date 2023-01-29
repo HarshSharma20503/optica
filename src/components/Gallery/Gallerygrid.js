@@ -55,35 +55,149 @@ export default function Gallerygrid() {
     );
   }
 
+
+
+  const handleClick=(e)=>{
+    let handle
+    if(e.target.matches(".handle")){
+      handle=e.target
+    }
+    else{
+        handle=e.target.closest(".handle")
+    }
+    if(handle != null) onHandleClick(handle)
+    
+  }
+
+  const throttleProgressBar=throttle(() => {
+    document.querySelectorAll(".progress-bar").forEach(calculateProgressBar)
+  },250)
+  window.addEventListener("resize",throttleProgressBar)
+
+  document.querySelectorAll(".progress-bar").forEach(calculateProgressBar)
+  
+  function calculateProgressBar(progressBar){
+    progressBar.innerHTML=""
+   
+    const slider= progressBar.closest(".gallery-row").querySelector(".gallery-items")
+    const itemCount=slider.children.length
+    const itemsPerScreen=parseInt(getComputedStyle(slider).getPropertyValue("--items-per-screen"))
+    let sliderIndex=parseInt(getComputedStyle(slider).getPropertyValue("--slider-index"))
+    const progressBarItemCount= Math.ceil(itemCount/itemsPerScreen)
+
+    if(sliderIndex >= progressBarItemCount){
+      slider.style.setProperty("--slider-index",progressBarItemCount - 1 )
+      sliderIndex = progressBarItemCount - 1 
+    }
+    for(let i=0;i<progressBarItemCount;i++){
+      const barItem=document.createElement("div")
+
+      barItem.classList.add("progress-item")
+      if(i === sliderIndex){
+        barItem.classList.add("active")
+      }
+      progressBar.append(barItem)
+    }
+  }
+
+
+  function onHandleClick(handle){
+    const progressBar=handle.closest(".gallery-row").querySelector(".progress-bar")
+    const slider=handle.closest(".gallery-imgcontainer").querySelector(".gallery-items")
+    const sliderIndex=parseInt(getComputedStyle(slider).getPropertyValue("--slider-index"))
+
+    const progressBarItemCount=progressBar.children.length
+    if(handle.classList.contains("left-handle")){
+      if(sliderIndex - 1 < 0){
+        slider.style.setProperty("--slider-index",progressBarItemCount - 1)
+        progressBar.children[sliderIndex].classList.remove("active")
+        progressBar.children[progressBarItemCount - 1].classList.add("active")
+      }else{
+        slider.style.setProperty("--slider-index",sliderIndex-1)
+        progressBar.children[sliderIndex].classList.remove("active")
+        progressBar.children[sliderIndex - 1].classList.add("active")
+      }
+    }
+
+    if(handle.classList.contains("right-handle")){
+      if(sliderIndex + 1>= progressBarItemCount){
+        slider.style.setProperty("--slider-index",0)
+        progressBar.children[sliderIndex].classList.remove("active")
+        progressBar.children[0].classList.add("active")
+      }else{
+      slider.style.setProperty("--slider-index",sliderIndex+1)
+      progressBar.children[sliderIndex].classList.remove("active")
+      progressBar.children[sliderIndex + 1].classList.add("active")
+      }
+    }
+  }
+
+  function throttle(cb, delay = 1000) {
+    let shouldWait = false
+    let waitingArgs
+    const timeoutFunc = () => {
+      if (waitingArgs == null) {
+        shouldWait = false
+      } else {
+        cb(...waitingArgs)
+        waitingArgs = null
+        setTimeout(timeoutFunc, delay)
+      }
+    }
+  
+    return (...args) => {
+      if (shouldWait) {
+        waitingArgs = args
+        return
+      }
+  
+      cb(...args)
+      shouldWait = true
+      setTimeout(timeoutFunc, delay)
+    }
+  }
+
+ 
   return (
-    <div className="App">
+    
       <div className="Gallery">
-      <div className="recent">
+      <div className="gallery-recent">
         Recent Highlights
        </div>
+       <div className="gallery-row">
        <div className="gallery-imgcontainer">
-       <button className="handle left-handle"><i class="fa-sharp fa-solid fa-chevron-left fa-2x"></i></button>
-    <div className="gallery-items">
-        <Gallerybgimg />
-        <Gallerybgimg />
-        <Gallerybgimg />
-        <Gallerybgimg />
-        <Gallerybgimg />
-        <Gallerybgimg />
-        <Gallerybgimg />
-        <Gallerybgimg />
-        <Gallerybgimg />
-        <Gallerybgimg />
-        <Gallerybgimg />
-        <Gallerybgimg />
+       <button onClick={handleClick} className="handle left-handle"><i class="fa-sharp fa-solid fa-chevron-left fa-2x"></i></button>
+             <div className="gallery-items">
+                  <Gallerybgimg />
+                  <Gallerybgimg />
+                  <Gallerybgimg />
+                  <Gallerybgimg />
+                  <Gallerybgimg />
+                  <Gallerybgimg />
+                  <Gallerybgimg />
+                  <Gallerybgimg />
+                  <Gallerybgimg />
+                  <Gallerybgimg />
+                  <Gallerybgimg />
+                  <Gallerybgimg />
+              </div>
+         <button  onClick={handleClick} className="handle right-handle"><i class="fa-sharp fa-solid fa-chevron-right fa-2x"></i></button>
+    
     </div>
-    <button  className="handle right-handle"><i class="fa-sharp fa-solid fa-chevron-right fa-2x"></i></button>
+    
+      <div className="progress-bar">
+      </div>
     </div>
+
+    
+            
+          <div className="gallery-header">Heading</div>
       <div className="gallery-container">
+
         <div className="gallery-heading">
-          <div></div>
+          
           <SideHeading
-            side_heading="Glimpses of our events from past years"
+            side_heading="Year-wise Gallery"
           />
 
           <YearButton className='year-buttons' text='2022' SetEventYear={setEventYear} />
@@ -102,6 +216,6 @@ export default function Gallerygrid() {
         </div>
       </div>
       </div>
-    </div>
+   
   );
 }
