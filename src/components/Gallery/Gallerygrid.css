@@ -53,6 +53,7 @@
   margin-bottom: 4%;
   font-size: 3rem;
   text-align: center;
+  font-weight: bold;
 }
 
 .handle{
@@ -160,7 +161,7 @@ background-color: rgba(0,0,0,0.2);
   justify-content: center;
   margin-bottom: 4%;
   font-size: 3rem;
-  font-weight:700;
+  font-weight:600;
 }
 
 
@@ -187,10 +188,12 @@ background-color: rgba(0,0,0,0.2);
   max-width: 400px;
   text-align: left;
   margin-left: 20px;
+  
 }
 
 .gallery-heading .side_heading h1 {
   font-size: 30px;
+  font-weight: 600;
 }
 
 .gallery-heading .year-buttons {
@@ -241,6 +244,7 @@ background-color: rgba(0,0,0,0.2);
     flex-direction: column;
     align-items: center;
     margin-bottom: 3rem auto;
+    margin-left: 0;
   }
 
   .Image-gallery {
