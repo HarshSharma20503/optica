@@ -264,4 +264,13 @@ background-color: rgba(0,0,0,0.2);
      margin-bottom: 5%;
   }
 
+  .gallery-items:focus-within .bg-img,
+  .gallery-items:hover .bg-img{
+  transform: translateX(0%);
+}
+
+.bg-img:focus ~ .bg-img,
+.bg-img:hover ~ .bg-img {
+  transform: translateX(0%);
+}
 }
