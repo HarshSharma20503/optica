@@ -1,3 +1,33 @@
+const recenthighlights=[
+  {
+     imgUrl:""
+  },
+  {
+     imgUrl:""
+  },
+  {
+     imgUrl:""
+  },
+  {
+     imgUrl:""
+  },
+  {
+     imgUrl:""
+  },
+  {
+     imgUrl:""
+  },
+  
+]
+
+
+
+
+
+
+
+
+
 const gallery2022=[
     {
         original:"/images/gallery images/2022 gallery/2022.jpg",
@@ -117,4 +147,4 @@ const gallery2019=[
     },
 ]
 
-export {gallery2022,gallery2019,gallery2021};
+export {gallery2022,gallery2019,gallery2021,recenthighlights};
