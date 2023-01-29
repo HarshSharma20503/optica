@@ -2,12 +2,12 @@
 
 .page_body{
     height : 60vh;
-    background-color: #171c28;
+    background-color: var(--bgcolor);
 }
 .page{
     width : 100%;
-    background-color: #171c2800;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25) , #171c28),  url("/public/images/background1.jpg") ; 
+    background-color: var(--bgcolor);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25) ,var(--bgcolor)),  url("/public/images/background1.jpg") ; 
     height : 60vh;
     position : relative;
     background-size: cover;
