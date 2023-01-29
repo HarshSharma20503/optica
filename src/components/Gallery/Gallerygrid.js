@@ -3,7 +3,7 @@ import ImageGallery from "react-image-gallery";
 // import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import SideHeading from "../SideHeading/SideHeading";
-import { gallery2022, gallery2019, gallery2021 } from "./GalleryimgData"
+import { gallery2022, gallery2019, gallery2021,recenthighlights} from "./GalleryimgData"
 import "react-image-gallery/styles/css/image-gallery.css";
 import "./Gallerygrid.css"
 import Gallerybgimg from "./Gallerybgimg";
@@ -183,18 +183,16 @@ export default function Gallerygrid() {
        <div className="gallery-imgcontainer">
        <button onClick={handleClick} className="handle left-handle"><i class="fa-sharp fa-solid fa-chevron-left fa-2x"></i></button>
              <div className="gallery-items">
-                  <Gallerybgimg />
-                  <Gallerybgimg />
-                  <Gallerybgimg />
-                  <Gallerybgimg />
-                  <Gallerybgimg />
-                  <Gallerybgimg />
-                  <Gallerybgimg />
-                  <Gallerybgimg />
-                  <Gallerybgimg />
-                  <Gallerybgimg />
-                  <Gallerybgimg />
-                  <Gallerybgimg />
+              {
+                recenthighlights.map((val,ind)=>{
+                  return(
+                    <Gallerybgimg 
+                      key={ind}
+                      url={val.imgUrl}
+                    />
+                  )
+                })
+              }
               </div>
          <button  onClick={handleClick} className="handle right-handle"><i class="fa-sharp fa-solid fa-chevron-right fa-2x"></i></button>
     

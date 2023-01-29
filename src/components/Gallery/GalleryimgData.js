@@ -1,21 +1,21 @@
 const recenthighlights=[
   {
-     imgUrl:""
+     imgUrl:"/images/events/code-orate.jpeg"
   },
   {
-     imgUrl:""
+     imgUrl:"/images/events/code-orate.jpeg"
   },
   {
-     imgUrl:""
+     imgUrl:"/images/events/code-orate.jpeg"
   },
   {
-     imgUrl:""
+     imgUrl:"/images/events/code-orate.jpeg"
   },
   {
-     imgUrl:""
+     imgUrl:"/images/events/code-orate.jpeg"
   },
   {
-     imgUrl:""
+     imgUrl:"/images/events/code-orate.jpeg"
   },
   
 ]
