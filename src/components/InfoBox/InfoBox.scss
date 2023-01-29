@@ -26,7 +26,7 @@
 
         p {
             font-size: 1.2rem;
-            text-align: center;
+            text-align: justify;
             line-height: 2rem;
         }
 
@@ -56,7 +56,7 @@
     .infobox_3_info {
         p {
             font-size: 1.2rem;
-            text-align: center;
+            text-align: justify;
             line-height: 2rem;
         }
     }
@@ -93,7 +93,7 @@
 
             p {
                 font-size: 1.2rem;
-                text-align: center;
+                text-align: justify;
                 line-height: 2rem;
             }
 
@@ -101,6 +101,9 @@
                 color: #e9a604;
             }
         }
+    }
+    .infobox_2{
+        flex-direction: column-reverse;
     }
 
 }

@@ -22,9 +22,10 @@ const InfoBox1 = (props) => {
         </div>
     )
 }
+
 const InfoBox2 = (props) => {
     return (
-        <div data-aos="fade-up" className="infobox">
+        <div data-aos="fade-up" className="infobox infobox_2">
             <div className="infobox_content">
                 <div className="infobox_heading"><h1>{props.heading}</h1></div>
                 <div className="infobox_info"><p>{props.info}</p></div>
@@ -36,8 +37,6 @@ const InfoBox2 = (props) => {
         </div>
     )
 }
-
-
 
 const InfoBox3 = (props) => {
     return (
