@@ -216,6 +216,9 @@ export default function Gallerygrid() {
             items={galleryData}
             renderLeftNav={renderLeftNav}
             renderRightNav={renderRightNav}
+            showPlayButton={false}
+            lazyLoad={true}
+            autoPlay={'true'}
           />
         </div>
       </div>
