@@ -13,7 +13,7 @@
 
 .event-wrapper {
   display: flex;
-  width: 90%;
+  width: 100%;
   justify-content: space-around;
 
   .event-Wrappercard {
@@ -111,7 +111,7 @@
 
 @media screen and (max-width:1080px) {
   .event-card-container{
-      max-width: 90%;
+      // max-width: 90%;
       margin: auto;
       grid-template-columns: repeat(1,1fr);
       
@@ -121,7 +121,7 @@
       font-size: large;
     }
     p{
-      font-size: 12px;
+      font-size: 13px;
     }
   }
 }
@@ -129,11 +129,14 @@
 
 @media screen and (max-width:768px) {
   .event-card-container{
-      max-width: 60%;
+      // max-width: 60%;
       margin: auto;
       grid-template-columns: 1fr;
   }
 
+  .event-wrapper .event-Wrappercard{
+    height: 200px;
+  }
   .event-wrapper{
     .event-Wrappercard{
       .event-info{
@@ -141,7 +144,7 @@
           font-size: large;
         }
         p{
-          font-size: 10px;
+          font-size: 13px;
         }
       }
     }
