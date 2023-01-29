@@ -61,8 +61,6 @@ export default function Gallerygrid() {
     );
   }
 
-
-
   const handleClick=(e)=>{
     let handle
     if(e.target.matches(".handle")){
