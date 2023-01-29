@@ -7,12 +7,19 @@ import { useEffect } from "react";
 const MentorDetails = () => {
 
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      offset: 100,
+      duration: 500,
+      easing: 'ease-in-sine',
+      delay: 100,
+  });
   }, [])
 
   return (
     <>
+     
       <div className="mentor-info">
+      <div data-aos="fade-up">
         <section  class="about">
           <div className="main">
             <img src="/images/anuraj_panwar.jpg" alt="Mentor photos" />
@@ -38,6 +45,8 @@ const MentorDetails = () => {
             </div>
           </div>
         </section>
+        </div>
+        <div data-aos="fade-up">
         <section class="about">
           <div className="main">
             <img src="/images/manoj_tripathi.png" alt="Mentor photos" />
@@ -59,6 +68,8 @@ const MentorDetails = () => {
             </div>
           </div>
         </section>
+        </div>
+        <div data-aos="fade-up">
         <section class="about">
           <div className="main">
             <img src="/images/ashish_bhatnagar.jpg" alt="Mentor photos" />
@@ -81,6 +92,7 @@ const MentorDetails = () => {
             </div>
           </div>
         </section>
+        </div>
       </div>
     </>
   );

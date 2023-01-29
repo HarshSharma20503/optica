@@ -195,7 +195,7 @@ export default function Gallerygrid() {
 
     
             
-          <div className="gallery-header">Heading</div>
+          <div className="gallery-header"> COUP D'OEIL</div>
       <div className="gallery-container">
 
         <div className="gallery-heading">
