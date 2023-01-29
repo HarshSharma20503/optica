@@ -33,6 +33,9 @@ export default function Gallerygrid() {
     throttleProgressBar();
   },[]);
 
+
+  // left navigation button of automatic carousel
+
   function renderLeftNav(onClick, disabled) {
     return (
       <div
@@ -47,6 +50,9 @@ export default function Gallerygrid() {
     );
   }
 
+
+  // right naviagation button of automatic carousel
+
   function renderRightNav(onClick, disabled) {
     return (
       <div
@@ -60,6 +66,8 @@ export default function Gallerygrid() {
       </div>
     );
   }
+
+   // this function helps know which button was clicked and stores it in handle variable 
 
   const handleClick=(e)=>{
     let handle
@@ -77,6 +85,8 @@ export default function Gallerygrid() {
   // window.addEventListener("resize",throttleProgressBar)
 
   document.querySelectorAll(".progress-bar").forEach(calculateProgressBar)
+
+  // this function helps shifts to next or previous screen using slider index and items per screen variables
   
   function calculateProgressBar(progressBar){
     progressBar.innerHTML=""
@@ -102,6 +112,7 @@ export default function Gallerygrid() {
     }
   }
 
+  //  this function handles click events
 
   function onHandleClick(handle){
     const progressBar=handle.closest(".gallery-row").querySelector(".progress-bar")
@@ -133,6 +144,8 @@ export default function Gallerygrid() {
       }
     }
   }
+
+  // throttle function refer web dev simplified blog for this
 
   function throttle(cb, delay = 1000) {
     let shouldWait = false
