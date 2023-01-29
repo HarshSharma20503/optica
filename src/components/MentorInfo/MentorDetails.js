@@ -1,10 +1,19 @@
 import React from "react";
 import "./MentorInfo.scss";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+import { useEffect } from "react";
+
 const MentorDetails = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
     <>
       <div className="mentor-info">
-        <section class="about">
+        <section  class="about">
           <div className="main">
             <img src="/images/anuraj_panwar.jpg" alt="Mentor photos" />
             <div className="about-text">

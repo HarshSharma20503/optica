@@ -11,12 +11,15 @@ import './App.css';
 import "./index.css";
 import Mentors from './routes/MentorDetails/Mentors';
 import Jscop from './routes/JSCOP/Jscop';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 
 function App() {
   return (
    <>
+   <ScrollToTop />
     <Routes>
+        
         <Route path="/" element={<Home />} />
         <Route path="/team" element={<Team />} />
         <Route path="/alumni" element={<Alumni />} />

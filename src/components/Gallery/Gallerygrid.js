@@ -26,6 +26,12 @@ export default function Gallerygrid() {
     }
   }, [eventYear]);
 
+  useEffect(()=>{
+    const throttleProgressBar=throttle(() => {
+      document.querySelectorAll(".progress-bar").forEach(calculateProgressBar)
+    },250)
+    throttleProgressBar();
+  },[]);
 
   function renderLeftNav(onClick, disabled) {
     return (
@@ -69,10 +75,8 @@ export default function Gallerygrid() {
     
   }
 
-  const throttleProgressBar=throttle(() => {
-    document.querySelectorAll(".progress-bar").forEach(calculateProgressBar)
-  },250)
-  window.addEventListener("resize",throttleProgressBar)
+  
+  // window.addEventListener("resize",throttleProgressBar)
 
   document.querySelectorAll(".progress-bar").forEach(calculateProgressBar)
   

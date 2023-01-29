@@ -1,5 +1,6 @@
 //mentorinfo css
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Ubuntu:wght@400;500&display=swap');
 
 .mentor {
   display: flex;
@@ -53,7 +54,8 @@
         padding: 1rem;
         display: flex;
         justify-content: center;
-        background-color: #fff;
+        // background-color: #fff;
+        background-image: linear-gradient(#6A85B6,#BAC8E0);
         z-index: 1;
         align-items: flex-end;
         text-align: center;
@@ -62,23 +64,27 @@
 
         h2 {
           display: block;
-          font-size: 1rem;
+          font-size: 0.9rem;
           color: #111;
           font-weight: 700;
-          line-height: 2rem;
+          line-height: 1.8rem;
+          font-family: "Montserrat",sans-serif;
           // letter-spacing: 1px;
         }
         span {
           color: #555;
           font-size: 0.8rem;
-          font-weight: 500;
+          font-weight: 700;
+          font-family: Montserrat,sans-serif;
           // letter-spacing: 2px;
         }
         .mentor-button {
-          background-color: rgb(129, 191, 244);
-          border-radius: 2rem;
+          // background-color: rgb(129, 191, 244);
+          background-image: linear-gradient(#00c6fb,#005bea);
+          border-radius: 10px;
           padding: 0.15rem 0.4rem;
           cursor: pointer;
+          font-family: Montserrat,sans-serif;
         }
       }
 

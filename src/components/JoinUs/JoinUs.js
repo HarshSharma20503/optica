@@ -1,11 +1,24 @@
 import "./JoinUs.css";
 import React from 'react'
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+import { useEffect } from "react";
 
 function JoinUs() {
+
+    useEffect(() => {
+        AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
+        });
+    }, []);
+
     return (
         <div className="planning" id="planning">
             {/* <div data-aos="fade-up" data-aos-anchor-placement="center-center"> */}
-                <h1 className="plan_title">JOIN US</h1>
+            <h1 className="plan_title">JOIN US</h1>
             {/* </div> */}
 
             <div className="plan-options">
@@ -28,7 +41,7 @@ function JoinUs() {
                     <div className="plan">
                         <div className="plan-header">
                             <h3 className="plan-heading">Join JIIT Optica Chapter</h3>
-                               {/* <button className="plan-save"> Save $40</button>  */}
+                            {/* <button className="plan-save"> Save $40</button>  */}
                         </div>
                         <ul className="plan-feature">
                             <li>Follow step by step guide in the document</li>
@@ -57,7 +70,7 @@ function JoinUs() {
             </div>
         </div>
 
-  )
+    )
 }
 
 export default JoinUs

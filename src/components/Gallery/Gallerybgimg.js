@@ -5,8 +5,7 @@ function Gallerybgimg(){
       
         
             <a href="#image" className="bg-img">
-                <img src="/images/gallery images/2022 gallery/2022.jpg" alt="" />
-          
+                <img src="/images/gallery images/2021 gallery/2021g.jpeg" alt="" />
             </a>
     
     
