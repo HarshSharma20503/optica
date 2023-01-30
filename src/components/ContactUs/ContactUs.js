@@ -24,14 +24,14 @@ function ContactUs() {
                 <div class="ContactUs-text-two">+91 8882988313</div>
               </div>
             </div>
-            {/* <div class="ContactUs-email ContactUs-details">
+            <div class="ContactUs-email ContactUs-details">
               <i class="fas fa-envelope"></i>
-              <div class="ContactUs-topic">Email</div>
+              {/* <div class="ContactUs-topic">Email</div> */}
               <div className="ContactUs-details2">
-                <div class="ContactUs-text-one">contact@jiitopticachapter.com</div>
+                {/* <div class="ContactUs-text-one">contact@jiitopticachapter.com</div> */}
                 <div class="ContactUs-text-two">jiitopticachapter@gmail.com</div>
               </div>
-            </div> */}
+            </div>
           </div>
           <div class="ContactUs-right-side">
             <div class="ContactUs-topic-text">Send us a message</div>

@@ -1,18 +1,8 @@
 const eventData2022_23 = [
     {
-        title: "Photoshop Workshop",
-        description: "Photoshop has become such a huge part of modern culture that even those who have never used it have often heard of it. This one-day Photoshop workshop organized by JIIT OPTICA STUDENT CHAPTER taught the skills needed to successfully use Photoshop for both online and print imagery.",
-        imgUrl: "https://www.jiitopticachapter.com/img1/pslogo.jpg",
-    },
-    {
         title: "Codeorate",
         description: "Cp workshop held by one and only priyansh aggarwal.",
         imgUrl: "/images/events/code-orate.jpeg",
-    },
-    {
-        title: "Crypto Beyond Trading",
-        description: "An amazing and knowledgable session on Crypto Trading with amazing insights for beginners.",
-        imgUrl: "https://www.jiitopticachapter.com/img1/crypto-event-22.jpeg",
     },
     {
         title: "API 101",
