@@ -12,7 +12,6 @@ const recenthighlights=[
      imgUrl:"/images/events/code-orate.jpeg"
   },
   
-  
 ]
 
 
